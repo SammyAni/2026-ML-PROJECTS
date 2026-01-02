@@ -1,4 +1,4 @@
-# 2026-ML-PROJECT 1 (BLACKLEARNBOX)
+# 2026-ML-PROJECT 1 (BBLEARN)
 #  Creating fake data to simulate oil wells
 #  Linear regression assumes a linear relationship between features and production
 
