@@ -1,4 +1,6 @@
 # 2026-ML-PROJECT 1 (BLACKLEARNBOX)
+#  Creating fake data to simulate oil wells
+#  Linear regression assumes a linear relationship between features and production
 
 import numpy as np
 import pandas as pd
@@ -7,7 +9,6 @@ from sklearn.linear_model import LinearRegression
 from sklearn.metrics import mean_squared_error, r2_score
 
 # Generating synthetic oil and gas data
-
 # Features: Well depth (feet), Reservoir pressure (psi), Temperature (°F)
 # Target: Oil production volume (barrels per day)
 
