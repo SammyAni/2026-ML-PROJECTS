@@ -28,9 +28,9 @@ data = pd.DataFrame({
     'Production': production
 })
 
-#  Prepare data for ML
-X = data[['Depth', 'Pressure', 'Temperature']]  # Features
-y = data['Production']  # Target
+#  Preparing data for ML #Features(x)  #Target(y)
+X = data[['Depth', 'Pressure', 'Temperature']]  
+y = data['Production'] 
 
 # Split into training and testing sets (80% train, 20% test)
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
