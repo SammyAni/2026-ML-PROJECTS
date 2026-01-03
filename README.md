@@ -12,11 +12,23 @@ from sklearn.metrics import mean_squared_error, r2_score
 # Features: Well depth (feet), Reservoir pressure (psi), Temperature (°F)
 # Target: Oil production volume (barrels per day)
 
-np.random.seed(42)  # For reproducibility
-n_samples = 1000
-depth = np.random.uniform(5000, 15000, n_samples)  # Depth in feet
-pressure = np.random.uniform(2000, 5000, n_samples)  # Pressure in psi
-temperature = np.random.uniform(100, 200, n_samples)  # Temperature in °F
+# Set a "magic number" so the random data is the same every time (like a seed in a game for fair play)
+np.random.seed(42)  # This makes sure I get the same fake data if I run the code again—great for testing!
+
+# Decide how many examples I want (like 1000 stories or data points)
+n_samples = 1000  # I create 1000 fake measurements
+
+# Make up random "depth" values (in feet, like how deep a hole is dug)
+# Imagine picking numbers between 5000 and 15000 randomly, like rolling dice
+depth = np.random.uniform(5000, 15000, n_samples)  # Each depth is a random number in that range
+
+# Make up random "pressure" values (in psi, like how much force is pushing)
+# Again, random picks between 2000 and 5000
+pressure = np.random.uniform(2000, 5000, n_samples)  # This is what I might want to predict later
+
+# Make up random "temperature" values (in °F, like how hot it is)
+# Random picks between 100 and 200
+temperature = np.random.uniform(100, 200, n_samples)  # Another clue for predictions
 
 # Simulating production: Higher depth/pressure might correlate with higher production (simplified)
 production = 50 + 0.005 * depth + 0.01 * pressure - 0.1 * temperature + np.random.normal(0, 10, n_samples)
