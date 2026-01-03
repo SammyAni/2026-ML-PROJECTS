@@ -30,7 +30,7 @@ pressure = np.random.uniform(2000, 5000, n_samples)  # This is what I might want
 # Random picks between 100 and 200
 temperature = np.random.uniform(100, 200, n_samples)  # Another clue for predictions
 
-# Simulating production: Higher depth/pressure might correlate with higher production (simplified)
+# Simulating the production: Higher depth/pressure might correlate with higher production (simplified)
 production = 50 + 0.005 * depth + 0.01 * pressure - 0.1 * temperature + np.random.normal(0, 10, n_samples)
 
 # Creating a DataFrame
