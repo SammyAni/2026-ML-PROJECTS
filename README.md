@@ -1,6 +1,6 @@
 # 2026-ML-PROJECT 1 (BBLEARN)
 #  Creating fake data to simulate oil wells
-#  Linear regression assumes a linear relationship between features and production
+#  Linear regression assumes a linear relationship between features and production,,
 
 import numpy as np
 import pandas as pd
